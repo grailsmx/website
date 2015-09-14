@@ -1,4 +1,4 @@
-{{ $baseurl := .Site.BaseUrl }}
+{{ $baseurl := .Site.BaseURL }}
 {{ template "theme/partials/header.html" . }}
 
 <h1>{{.Title}}</h1>
@@ -26,7 +26,7 @@
           </p>
       <p class="entry-reading-time">
             <i class="fa fa-user"></i>
-            {{ if isset .Params "author" }}<span class="author vcard"><span class="fn"><a href="{{ .Site.BaseUrl }}/about/" title="About {{ .Site.Params.Author }}">{{ .Params.author }}</a></span></span>{{ end }}
+            {{ if isset .Params "author" }}<span class="author vcard"><span class="fn"><a href="{{ .Site.BaseURL }}/about/" title="About {{ .Site.Params.Author }}">{{ .Params.author }}</a></span></span>{{ end }}
           </p>
           
     </section>

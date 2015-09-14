@@ -3,7 +3,7 @@
   <head>
     {{ template "theme/partials/meta.html" . }}
 
-    <base href="{{ .Site.BaseUrl }}">
+    <base href="{{ .Site.BaseURL }}">
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" >
     {{ end }}
 
-    {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
+    {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
