@@ -7,7 +7,7 @@ title = "Groovy y Grails en tu idioma"
 theme = "default"
 
 pygmentsuseclasses = true
-disqusShortname = "groovyando"
+#disqusShortname = "groovyando"
 
 
 Auther = "GrailsMX"
